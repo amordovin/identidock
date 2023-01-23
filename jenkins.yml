@@ -1,11 +1,14 @@
-identidock:
-  build: .
-  environmemt:
-    ENV: PROD
-  links:
-    - dnmoster
-    - redis
+---
+version: "3.9"
+services:
+  identidock:
+    build: .
+    environment:
+      ENV: PROD
+    links:
+      - dnmonster
+      - redis
   dnmonster:
     image: amouat/dnmonster:1.0
   redis:
-    image: redis:4.4.2
+    image: redis:latest
