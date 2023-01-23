@@ -1,0 +1,11 @@
+identidock:
+  build: .
+  environmemt:
+    ENV: PROD
+  links:
+    - dnmoster
+    - redis
+  dnmonster:
+    image: amouat/dnmonster:1.0
+  redis:
+    image: redis:4.4.2
