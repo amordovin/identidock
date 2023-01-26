@@ -14,7 +14,7 @@ services:
   dnmonster:
     image: amouat/dnmonster:1.0
     ports:
-      - "8080:8080"
+      - "5443:8080"
   redis:
     image: redis:latest
 
